@@ -21,3 +21,9 @@
 3. Run the tests with the command:
 * For MySQL: `./gradlew clean test -Ddb.url=jdbc:mysql://localhost:3306/app -Dlogin=app -Dpassword=pass -Dapp.url=http://localhost:8080`
 * For PostgreSQL: `./gradlew clean test -Ddb.url=jdbc:postgresql://localhost:5432/postgres -Dlogin=app -Dpassword=pass -Dapp.url=http://localhost:8080`
+
+###Environment:
+- Windows 10 Home
+- Asus VivoBook 14 i5-1135G7 @ 2.40GHz
+- Intellij IDEA 2022.3.2 Community
+- Chrome Version 110.0.5481.178
