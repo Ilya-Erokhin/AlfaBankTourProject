@@ -1,4 +1,5 @@
 ### A plan for automating testing of a complex service that interacts with the DBMS and API of the Bank.
+
 **Task:**
 Application testing (web-service), providing the possibility of buying a Tour, using 2 ways:
 1. Debit card payment.
@@ -24,11 +25,9 @@ Application testing (web-service), providing the possibility of buying a Tour, u
 Steps:
 1. Press the "Buy" button
 
-Expected Result: the form for filling in the fields "Buy by card" is displayed
-Actual: Found The Bug*
+Expected Result: The form for filling in the fields "Buy by card" is displayed
 
 **2. Successful purchase by clicking on the "Buy"/"Buy in credit" button**
-Actual: Found The Bug*
 
 Steps:
 1. Click on the "Buy" button
@@ -118,7 +117,7 @@ Steps:
 
 Expected Result: An error message appears in red "Card expired", data is not sent.
 
-**eleven. Checking the "Owner" field (negative scenario for both forms of payment)**
+**11. Checking the "Owner" field (negative scenario for both forms of payment)**
 
 Steps:
 1. Enter valid data in the fields: "Card number", "Month", "Year", "CVC/CVV"
@@ -153,7 +152,7 @@ Steps:
 2. Leave the field "Month" empty.
 3. Click on the "Continue" button.
 
-OR: Under the field "Month" an error message appears in red "Incorrect format", the data is not sent.
+Expected Result: Under the field "Month" an error message appears in red "Incorrect format", the data is not sent.
 
 **15. Validation of entering 00 in the "Month" field (negative scenario for both forms of payment)**
 
@@ -162,7 +161,7 @@ Steps:
 2. Enter 00 in the "Month" field.
 3. Click on the "Continue" button.
 
-OR: Under the "Month" field, an error message appears in red "Invalid month format", the data is not sent.
+Expected Result: Under the "Month" field, an error message appears in red "Invalid month format", the data is not sent.
 
 **16. Checking the empty field "Year" (negative scenario for both forms of payment)**
 
@@ -253,14 +252,13 @@ OR: there is an entry in the table.
 ### Tools Used
 
 - Asus VivoBook 14, core i5 - 10 gen.
-- java 11 - Popular programming language version
+- java 17 - Popular programming language version
 - Intellij IDEA 2022.3.2 Community edition - an integrated software development environment for many programming languages, including Java
 - Gradle - project build automation tool, allows you to easily build a build with all dependencies, and also generates testing reports
 - JUnit 5 - popular test framework with nested and parameterized tests
 - Selenide - a tool for automating user actions in the browser, focused on the convenience and ease of implementing business logic in autotests
 - Faker - a library required to generate random test data, allows you not to invent or manually write test data sets
 - Rest Assured - java-library for REST API testing, allows you to automate testing of get and post requests
-- Allure - a framework for creating test reports, for a visual display of test passing and errors
 - Docker - for deploying virtual database containers, as well as a bank services emulator on NodeJS
 - Lombok - a plugin that provides annotations to reduce coding time
 - Postman - to check API requests (manual)

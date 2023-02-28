@@ -1,32 +1,28 @@
-# Отчет по итогам автоматизации
+# Report on the results of automation
 
-Выполнена автоматизация тестирования веб-сервиса для покупки путешествия по карте либо в кредит. Согласно тест плана
-Сделано все, что требовалось по ТЗ. План автоматизации был заранее согласован с дипломным руководителем.
+Automated testing of a web service for buying a trip by card or on credit. According to test plan
+Everything that was required according to the Technical Task has been done.
+
+___
+
+Service has been tested:
+
+* Application launch correctness (SUT), with two integrations
+* Support for two DBMS ("MySQL" and "PostgreSQL") and correct connection to them
+* Correct display of the start page of the offer and forms of payment
+* Correctness of filling in the fields of the forms "Payment by card" and "Credit according to the card data"
+* The correctness of the display and content of pop-up windows with notifications of a successful operation or an operation with an error
+* Correctness of saved information about payments in the DBMS
+___
+
+Unaccounted risks:
+
+* lack of knowledge and experience in automation
+* difficulties with connecting the environment due to the change of obsolete equipment (additional time was required)
+* the need for additional information on working with docker containers (the project was renamed after the previous container was launched)
 
 ___
 
-Проверена работоспособность сервиса:
+Scheduled time: 50 hours
 
-* Корректность запуска приложения (SUT), с двумя интеграциями
-* Поддержка двух СУБД ("MySQL" и "PostgreSQL") и корректное подключение к ним
-* Корректность отображения стартовой страницы предложения и форм оплаты
-* Корректность заполнения полей форм "Оплата по карте" и "Кредит по данным карты"
-* Корректность отображения и содержания всплывающих окон с уведомлениями об успешной операции или операции с ошибкой
-* Корректность сохраненной информации о платежах в СУБД
-___
-
-Неучтённые риски:
-
-* недостачно знаний и опыта в автоматизации
-* сложности с подключением окружения по причине смены устаревшей техники (дополнительное время потребовалось)
-* необходимость дополнительной информации по работе с docker контейнерами (проект был переименован после запуска прежнего контейнера)
-
-___
-  
-Запланировано времени: 50 часов
-
-Общее затраченное время: 100 часов (чистого времени)
-
-Задержка вызвана причинами, описанным в графе "Неучтенные риски".
-Фактически сдача дипломной работы не соответствует датам, указанным в Плане, по причине повышенной загруженности на рабочем проекте.
-
+Total elapsed time: 100 hours (net time)

@@ -11,16 +11,12 @@ Number of test scenarios:
 * Testing the form of purchase on credit - 20
 * Testing entering information into databases: 4/4
 ___
-Обнаружено багов - 8 (7 багов в ходе прогона сценариев и 1 баг орфографическая ошибка в названии)
-
-Отчеты о тестировании были сформированы с помощью инструмента "Allure"
-<img width="921" alt="Allure report" src="https://user-images.githubusercontent.com/79021474/146738163-630e4c76-7cd1-4462-9a5c-a28d922c22b4.png">
-
+Bugs found - 8 (7 bugs during script run and 1 spelling bug in title)
 ____
 
-Рекомендации:
+Recommendations:
 
-* Необходимо исправление выявленных багов (см. Issue)
-* Необходимо повысить testability приложения путем присвоения уникальных test_id для элементов графического интерфейса
-* Заменить предупреждения "Неверный формат" на более понятные пользователю
+* It is necessary to fix the identified bugs (see Issue)
+* It is necessary to increase the testability of the application by assigning unique test_id to GUI elements
+* Replace "Invalid Format" warnings with more user-friendly ones
 ____
