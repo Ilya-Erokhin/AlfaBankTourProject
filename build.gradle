@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.8.1'
+}
+
+group 'ru.netology'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+allure {
+    autoconfigure = true
+    version = '2.13.3'
+
+    useJUnit5 {
+        version = '2.13.3'
+    }
+}
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation 'com.codeborne:selenide:6.9.0'
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
+    testCompileOnly 'org.projectlombok:lombok:1.18.24'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+    testImplementation 'mysql:mysql-connector-java:8.0.28'
+    testImplementation 'org.postgresql:postgresql:42.2.2'
+    testImplementation 'io.qameta.allure:allure-selenide:2.13.3'
+
+}
+configurations {
+    testCompile
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty 'selenide.headless', System.getProperty('selenide.headless')
+}
